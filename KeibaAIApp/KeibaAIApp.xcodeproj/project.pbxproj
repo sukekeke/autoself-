@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		9B3DB66E2EBA4AD300081977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B3DB6582EBA4AD100081977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B3DB65F2EBA4AD100081977;
+			remoteInfo = KeibaAIApp;
+		};
+		9B3DB6782EBA4AD300081977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B3DB6582EBA4AD100081977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B3DB65F2EBA4AD100081977;
+			remoteInfo = KeibaAIApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B3DB6602EBA4AD100081977 /* KeibaAIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeibaAIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3DB66D2EBA4AD300081977 /* KeibaAIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeibaAIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3DB6772EBA4AD300081977 /* KeibaAIAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeibaAIAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9B3C29072ECA0D8100F33AAF /* Exceptions for "KeibaAIApp" folder in "KeibaAIApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9B3DB65F2EBA4AD100081977 /* KeibaAIApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9B3DB6622EBA4AD100081977 /* KeibaAIApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9B3C29072ECA0D8100F33AAF /* Exceptions for "KeibaAIApp" folder in "KeibaAIApp" target */,
+			);
+			path = KeibaAIApp;
+			sourceTree = "<group>";
+		};
+		9B3DB6702EBA4AD300081977 /* KeibaAIAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KeibaAIAppTests;
+			sourceTree = "<group>";
+		};
+		9B3DB67A2EBA4AD300081977 /* KeibaAIAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KeibaAIAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B3DB65D2EBA4AD100081977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B3DB66A2EBA4AD300081977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B3DB6742EBA4AD300081977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B3DB6572EBA4AD100081977 = {
+			isa = PBXGroup;
+			children = (
+				9B3DB6622EBA4AD100081977 /* KeibaAIApp */,
+				9B3DB6702EBA4AD300081977 /* KeibaAIAppTests */,
+				9B3DB67A2EBA4AD300081977 /* KeibaAIAppUITests */,
+				9B3DB6612EBA4AD100081977 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B3DB6612EBA4AD100081977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B3DB6602EBA4AD100081977 /* KeibaAIApp.app */,
+				9B3DB66D2EBA4AD300081977 /* KeibaAIAppTests.xctest */,
+				9B3DB6772EBA4AD300081977 /* KeibaAIAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B3DB65F2EBA4AD100081977 /* KeibaAIApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B3DB6812EBA4AD300081977 /* Build configuration list for PBXNativeTarget "KeibaAIApp" */;
+			buildPhases = (
+				9B3DB65C2EBA4AD100081977 /* Sources */,
+				9B3DB65D2EBA4AD100081977 /* Frameworks */,
+				9B3DB65E2EBA4AD100081977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9B3DB6622EBA4AD100081977 /* KeibaAIApp */,
+			);
+			name = KeibaAIApp;
+			packageProductDependencies = (
+			);
+			productName = KeibaAIApp;
+			productReference = 9B3DB6602EBA4AD100081977 /* KeibaAIApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B3DB66C2EBA4AD300081977 /* KeibaAIAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B3DB6842EBA4AD300081977 /* Build configuration list for PBXNativeTarget "KeibaAIAppTests" */;
+			buildPhases = (
+				9B3DB6692EBA4AD300081977 /* Sources */,
+				9B3DB66A2EBA4AD300081977 /* Frameworks */,
+				9B3DB66B2EBA4AD300081977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B3DB66F2EBA4AD300081977 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9B3DB6702EBA4AD300081977 /* KeibaAIAppTests */,
+			);
+			name = KeibaAIAppTests;
+			packageProductDependencies = (
+			);
+			productName = KeibaAIAppTests;
+			productReference = 9B3DB66D2EBA4AD300081977 /* KeibaAIAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B3DB6762EBA4AD300081977 /* KeibaAIAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B3DB6872EBA4AD300081977 /* Build configuration list for PBXNativeTarget "KeibaAIAppUITests" */;
+			buildPhases = (
+				9B3DB6732EBA4AD300081977 /* Sources */,
+				9B3DB6742EBA4AD300081977 /* Frameworks */,
+				9B3DB6752EBA4AD300081977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B3DB6792EBA4AD300081977 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9B3DB67A2EBA4AD300081977 /* KeibaAIAppUITests */,
+			);
+			name = KeibaAIAppUITests;
+			packageProductDependencies = (
+			);
+			productName = KeibaAIAppUITests;
+			productReference = 9B3DB6772EBA4AD300081977 /* KeibaAIAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B3DB6582EBA4AD100081977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					9B3DB65F2EBA4AD100081977 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					9B3DB66C2EBA4AD300081977 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 9B3DB65F2EBA4AD100081977;
+					};
+					9B3DB6762EBA4AD300081977 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 9B3DB65F2EBA4AD100081977;
+					};
+				};
+			};
+			buildConfigurationList = 9B3DB65B2EBA4AD100081977 /* Build configuration list for PBXProject "KeibaAIApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B3DB6572EBA4AD100081977;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9B3DB6612EBA4AD100081977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B3DB65F2EBA4AD100081977 /* KeibaAIApp */,
+				9B3DB66C2EBA4AD300081977 /* KeibaAIAppTests */,
+				9B3DB6762EBA4AD300081977 /* KeibaAIAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B3DB65E2EBA4AD100081977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B3DB66B2EBA4AD300081977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B3DB6752EBA4AD300081977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B3DB65C2EBA4AD100081977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B3DB6692EBA4AD300081977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B3DB6732EBA4AD300081977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B3DB66F2EBA4AD300081977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B3DB65F2EBA4AD100081977 /* KeibaAIApp */;
+			targetProxy = 9B3DB66E2EBA4AD300081977 /* PBXContainerItemProxy */;
+		};
+		9B3DB6792EBA4AD300081977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B3DB65F2EBA4AD100081977 /* KeibaAIApp */;
+			targetProxy = 9B3DB6782EBA4AD300081977 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9B3DB67F2EBA4AD300081977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = H62P3DFNKS;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B3DB6802EBA4AD300081977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = H62P3DFNKS;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B3DB6822EBA4AD300081977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H62P3DFNKS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeibaAIApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sukeke.KeibaAIApp333;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B3DB6832EBA4AD300081977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H62P3DFNKS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeibaAIApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sukeke.KeibaAIApp333;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B3DB6852EBA4AD300081977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H62P3DFNKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sukeke.KeibaAIAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeibaAIApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeibaAIApp";
+			};
+			name = Debug;
+		};
+		9B3DB6862EBA4AD300081977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H62P3DFNKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sukeke.KeibaAIAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeibaAIApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeibaAIApp";
+			};
+			name = Release;
+		};
+		9B3DB6882EBA4AD300081977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H62P3DFNKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sukeke.KeibaAIAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeibaAIApp;
+			};
+			name = Debug;
+		};
+		9B3DB6892EBA4AD300081977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H62P3DFNKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sukeke.KeibaAIAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeibaAIApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B3DB65B2EBA4AD100081977 /* Build configuration list for PBXProject "KeibaAIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3DB67F2EBA4AD300081977 /* Debug */,
+				9B3DB6802EBA4AD300081977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B3DB6812EBA4AD300081977 /* Build configuration list for PBXNativeTarget "KeibaAIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3DB6822EBA4AD300081977 /* Debug */,
+				9B3DB6832EBA4AD300081977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B3DB6842EBA4AD300081977 /* Build configuration list for PBXNativeTarget "KeibaAIAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3DB6852EBA4AD300081977 /* Debug */,
+				9B3DB6862EBA4AD300081977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B3DB6872EBA4AD300081977 /* Build configuration list for PBXNativeTarget "KeibaAIAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3DB6882EBA4AD300081977 /* Debug */,
+				9B3DB6892EBA4AD300081977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B3DB6582EBA4AD100081977 /* Project object */;
+}
