@@ -39,7 +39,7 @@ struct AITabView: View {
 
                 // スクロールView
                 ScrollView {
-                    // 上としたとのViewのスペース
+                    // 上下とのViewのスペース
                     VStack(spacing: 30) {
                         //　上の空白
                         Spacer(minLength: 16)
@@ -112,43 +112,22 @@ struct AITabView: View {
                                 Divider()
 
                                 // Grid（買い目・金額）
-                                VStack(alignment: .leading, spacing: 6) {
-                                    Grid(alignment: .leading, horizontalSpacing: 12, verticalSpacing: 4) {
-                                        ForEach(lines, id: \.self) { line in
-                                            let parts = line.split(separator: " ")
-                                            GridRow {
-                                                Text(parts.count > 0 ? String(parts[0]) : "")
-                                                    .frame(width: 60, alignment: .leading)
-                                                Text(parts.count > 1 ? String(parts[1]) : "")
-                                                    .frame(width: 50, alignment: .leading)
-                                                Text(parts.count > 2 ? String(parts[2]) : "")
-                                                    .frame(maxWidth: .infinity, alignment: .trailing)
-                                                    .monospacedDigit()
-                                            }
-                                            .font(.body)
-                                        }
-                                    }
+                                PredictionGridView(lines: lines, font: .body)
+                                // 予想履歴ボタン
+                                NavigationLink {
+                                    HistoryListView()
+                                } label: {
+                                    Text("予想履歴一覧を見る")
+                                        .font(.subheadline)
+                                        .frame(maxWidth: .infinity, minHeight: 44)
                                 }
                             }
                             .padding()
-                            .background(.thinMaterial) // ← 直近予想カード全体
+                            .background(.thinMaterial)
                             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                             .padding(.horizontal, 20)
                             .padding(.top, 8)
                             .padding(.bottom, 4)
-
-                            // 予想履歴ボタン
-                            NavigationLink {
-                                HistoryListView()
-                            } label: {
-                                Text("予想履歴一覧を見る")
-                                    .font(.subheadline)
-                                    .frame(maxWidth: .infinity, minHeight: 44)
-                            }
-                            .buttonStyle(.bordered)
-                            .tint(.accentColor)
-                            .padding(.horizontal, 20)
-                            .padding(.top, 8)
                         }
                     }
                 }

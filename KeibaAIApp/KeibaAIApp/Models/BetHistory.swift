@@ -22,13 +22,13 @@ struct BetHistory: Identifiable, Codable, Hashable {
     let date: Date
     let raceName: String
     let summary: String
-    var result: BetResult   // ★ 追加
+    var result: BetResult
 
     init(id: UUID = UUID(),
          date: Date,
          raceName: String,
          summary: String,
-         result: BetResult = .pending) {   // 新規は「判定前」
+         result: BetResult = .pending) {
         self.id = id
         self.date = date
         self.raceName = raceName

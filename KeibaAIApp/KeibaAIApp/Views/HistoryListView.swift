@@ -6,7 +6,9 @@ struct HistoryListView: View {
     @AppStorage("betHistoryJSON") private var betHistoryJSON: Data = Data()
 
     @State private var list: [BetHistory] = []
-    @State private var filter: HistoryFilter = .all   // ★ どのタブが選ばれているか
+    
+    // どのタブが選ばれているか
+    @State private var filter: HistoryFilter = .all
     
     enum HistoryFilter: String, CaseIterable, Identifiable {
         case all    = "すべて"
@@ -20,7 +22,7 @@ struct HistoryListView: View {
 
     var body: some View {
             VStack {
-                // ▼ 上部タブ（セグメント）
+                //上部タブ
                 Picker("フィルタ", selection: $filter) {
                     ForEach(HistoryFilter.allCases) { f in
                         Text(f.title).tag(f)
@@ -29,7 +31,7 @@ struct HistoryListView: View {
                 .pickerStyle(.segmented)
                 .padding([.horizontal, .top])
 
-                // ▼ 一覧本体
+                // 一覧本体
                 List {
                     if filteredHistory.isEmpty {
                         Text("まだ予想履歴がありません")
@@ -48,8 +50,6 @@ struct HistoryListView: View {
             }
         }
 
-        // MARK: - フィルタ後の配列
-
         private var filteredHistory: [BetHistory] {
             switch filter {
             case .all:
@@ -61,25 +61,57 @@ struct HistoryListView: View {
             }
         }
 
-        // MARK: - 1行分の表示
-
+        // 複数のViewをまとめて返せる
         @ViewBuilder
         private func row(for item: BetHistory) -> some View {
             VStack(alignment: .leading, spacing: 4) {
-                HStack {
+//                ZStack {
+//                    // 中央のタイトル
+//                    Text(item.raceName)
+//                        .font(.headline)
+//                        .frame(maxWidth: .infinity)
+//                        .multilineTextAlignment(.center)
+//
+//                    // 右端のバッジ
+//                    HStack {
+//                        Spacer()
+//                        Text(item.result.displayName)
+//                            .font(.caption2)
+//                            .padding(.horizontal, 8)
+//                            .padding(.vertical, 4)
+//                            .background(resultColor(item.result).opacity(0.15))
+//                            .foregroundColor(resultColor(item.result))
+//                            .clipShape(Capsule())
+//                    }
+//                }
+                ZStack {
+                    // 中央：レース名
                     Text(item.raceName)
                         .font(.headline)
+                        .frame(maxWidth: .infinity)
+                        .multilineTextAlignment(.center)
 
-                    Spacer()
+                    // 左：日付
+                    HStack {
+                        Text(dateString(item.date))
+                            .font(.caption2)
+                            .foregroundStyle(.secondary)
 
-                    // 右端にバッジ
-                    Text(item.result.displayName)
-                        .font(.caption2)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 4)
-                        .background(resultColor(item.result).opacity(0.15))
-                        .foregroundColor(resultColor(item.result))
-                        .clipShape(Capsule())
+                        Spacer()
+                    }
+
+                    // 右：バッジ
+                    HStack {
+                        Spacer()
+
+                        Text(item.result.displayName)
+                            .font(.caption2)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(resultColor(item.result).opacity(0.15))
+                            .foregroundColor(resultColor(item.result))
+                            .clipShape(Capsule())
+                    }
                 }
 
                 // 2行目以降：買い目を「/」で区切って1行ずつ
@@ -87,16 +119,7 @@ struct HistoryListView: View {
                             .split(separator: "/")
                             .map { $0.trimmingCharacters(in: .whitespaces) }
 
-                        VStack(alignment: .leading, spacing: 4) {
-                            ForEach(lines, id: \.self) { line in
-                                Text(line)
-                                    .font(.subheadline)
-                            }
-                        }
-
-                Text(dateString(item.date))
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                PredictionGridView(lines: lines)
             }
             .padding(.vertical, 6)
             .swipeActions(edge: .trailing) {
@@ -120,7 +143,6 @@ struct HistoryListView: View {
             }
         }
 
-        // MARK: - 読み書き
 
         private func load() -> [BetHistory] {
             guard !betHistoryJSON.isEmpty,
@@ -145,7 +167,7 @@ struct HistoryListView: View {
         private func dateString(_ d: Date) -> String {
             let f = DateFormatter()
             f.locale = Locale(identifier: "ja_JP")
-            f.dateFormat = "yyyy/MM/dd HH:mm"
+            f.dateFormat = "M/d(E)"
             return f.string(from: d)
         }
     }
