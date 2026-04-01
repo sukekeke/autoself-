@@ -65,25 +65,6 @@ struct HistoryListView: View {
         @ViewBuilder
         private func row(for item: BetHistory) -> some View {
             VStack(alignment: .leading, spacing: 4) {
-//                ZStack {
-//                    // 中央のタイトル
-//                    Text(item.raceName)
-//                        .font(.headline)
-//                        .frame(maxWidth: .infinity)
-//                        .multilineTextAlignment(.center)
-//
-//                    // 右端のバッジ
-//                    HStack {
-//                        Spacer()
-//                        Text(item.result.displayName)
-//                            .font(.caption2)
-//                            .padding(.horizontal, 8)
-//                            .padding(.vertical, 4)
-//                            .background(resultColor(item.result).opacity(0.15))
-//                            .foregroundColor(resultColor(item.result))
-//                            .clipShape(Capsule())
-//                    }
-//                }
                 ZStack {
                     // 中央：レース名
                     Text(item.raceName)

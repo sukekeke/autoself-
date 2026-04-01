@@ -9,15 +9,27 @@ import SwiftUI
 struct StatCard: View {
     let title: String
     let value: String
+    var valueColor: Color = .primary
+
     var body: some View {
         VStack(spacing: 6) {
-            Text(title).font(.caption).foregroundStyle(.secondary)
-            Text(value).font(.headline).monospacedDigit().lineLimit(1)            // ★ 1行から折り返さない
-                .minimumScaleFactor(0.7) // ★ 収まらないときは少し縮める
+            Text(title)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            Text(value)
+                .font(.subheadline)
+                .fontWeight(.semibold)
+                .monospacedDigit()
+                .lineLimit(1)
+                .minimumScaleFactor(0.6)
+                .allowsTightening(true)
+                .foregroundColor(valueColor) // ←ここ追加
         }
         .frame(maxWidth: .infinity)
-        .padding()
+        .padding(.vertical, 12)
+        .padding(.horizontal, 8)
         .background(.thinMaterial)
-        .cornerRadius(12)
+        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 }

@@ -11,8 +11,8 @@ final class PredictViewModel: ObservableObject {
     @Published var allRaces: [Race] = []
     @Published var g1NextWeek: [Race] = []
     @Published var selectedRace: Race?
-    @Published var stakeYen: Int = 10000           // 掛け金（合計）
-    @Published var targetProfitYen: Int = 20000    // 目標利益
+    @Published var stakeYen: Int = 0           // 掛け金（合計）
+    @Published var targetProfitYen: Int = 0    // 目標利益
     @Published var suggestions: [BetSuggestion] = []
 
     private let api: KeibaAPI   // ★ 追加：APIを持たせる

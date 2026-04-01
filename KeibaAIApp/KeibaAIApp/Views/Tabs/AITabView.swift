@@ -18,6 +18,32 @@ struct AITabView: View {
         return (Double(profit) / Double(usedAmount)) * 100
     }
 
+    func formatAmount(_ value: Int) -> String {
+        return value.formatted()
+    }
+
+    func formatProfit(_ value: Int) -> String {
+        if value == 0 { return "±0" }
+        return value > 0 ? "+\(value.formatted())" : value.formatted()
+    }
+
+    func formatProfitSmart(_ value: Int) -> String {
+        if value == 0 { return "±0" }
+
+        let sign = value > 0 ? "+" : ""
+        let absValue = abs(value)
+
+        if absValue >= 1_000_000 {
+            let man = Double(absValue) / 1_000_000
+            return "\(sign)\(Int(man))万"
+        } else if absValue >= 10_000 {
+            let man = Double(absValue) / 10_000
+            return "\(sign)\(String(format: "%.1f", man))万"
+        } else {
+            return "\(sign)\(absValue.formatted())"
+        }
+    }
+    
     // 予想内容のフォーマット整理
     private var lines: [String] {
         lastBetSummary
@@ -54,11 +80,25 @@ struct AITabView: View {
                             Divider()
 
                             HStack(spacing: 12) {
-                                StatCard(title: "使用金額", value: "\(usedAmount.formatted())円")
-                                StatCard(title: "儲け", value: "\(profit.formatted())円")
-                                StatCard(title: "回収率", value: String(format: "%.1f%%", roi))
+
+                                StatCard(
+                                    title: "使用金額",
+                                    value: "\(formatAmount(usedAmount))円"
+                                )
+
+                                StatCard(
+                                    title: "儲け",
+                                    value: "\(formatProfitSmart(profit))円",
+                                    valueColor: profit > 0 ? .green : (profit < 0 ? .red : .secondary)
+                                )
+
+                                StatCard(
+                                    title: "回収率",
+                                    value: String(format: "%.1f%%", roi),
+                                    valueColor: roi >= 100 ? .green : .red
+                                )
                             }
-                        }
+                            .frame(maxWidth: .infinity)                        }
                         .padding(20)
                         .background(.ultraThinMaterial)
                         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
